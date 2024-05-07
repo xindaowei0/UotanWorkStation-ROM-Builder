@@ -6,7 +6,7 @@ on:
       ROM_NAME_ANDROID_VERSION: Arrow_14
         description: 'ROM_NAME&ANDROID_VERSION (Support ROM please see Readme.md.)'
         required: true
-      DEVICE_PATH: 'xiaomi/dagu'
+      DEVICE_PATH: xiaomi/dagu
         description: 'DEVICE_PATH'
         required: true
       DEVICE_TREE_URL_BRANCH: https://github.com/Rinko-Studio/android_device_xiaomi_dagu -b arrow-13.0
