@@ -3,31 +3,31 @@ name: ROM Build
 on:
   workflow_dispatch:
     inputs:
-      ROM_NAME_ANDROID_VERSION: Arrow_14
+      ROM_NAME_ANDROID_VERSION:
         description: 'ROM_NAME&ANDROID_VERSION (Support ROM please see Readme.md.)'
         required: true
-      DEVICE_PATH: xiaomi/dagu
+      DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-      DEVICE_TREE_URL_BRANCH: https://github.com/Rinko-Studio/android_device_xiaomi_dagu -b arrow-13.0
+      DEVICE_TREE_URL_BRANCH:
         description: 'DEVICE_TREE_URL&BRANCH'
         required: true
-      KERNEL_SOURCE_URL_BRANCH: https://github.com/Rinko-Studio/android_kernel_xiaomi_dagu -b arrow-13.0
+      KERNEL_SOURCE_URL_BRANCH:
         description: 'KERNEL_SOURCE_URL&BRANCH'
-        required: true
-      KERNEL_SOURCE_PATH: xiaomi/dagu
+        required: false
+      KERNEL_SOURCE_PATH:
         description: 'KERNEL_SOURCE_PATH'
-        required: true
-      VENDOR_BLOBS_URL_BRANCH: https://github.com/Rinko-Studio/android_vendor_xiaomi_dagu -b arrow-12.1
+        required: false
+      VENDOR_BLOBS_URL_BRANCH:
         description: 'VENDOR_BLOBS_URL&BRANCH'
         required: false
-      COMMON_TREE_URL_BRANCH: https://github.com/LineageOS/android_device_xiaomi_sm8250-common -b lineage-21
+      COMMON_TREE_URL_BRANCH:
         description: 'COMMON_TREE_URL&BRANCH (if no common tree, leave blank)'
         required: false
-      COMMON_BLOBS_URL_BRANCH: https://github.com/Rinko-Studio/android_vendor_xiaomi_dagu -b arrow-12.1
+      COMMON_BLOBS_URL_BRANCH:
         description: 'COMMON_BLOBS_URL&BRANCH (if no common tree, leave blank)'
         required: false
-      COMMON_PATH: xiaomi/dagu
+      COMMON_PATH:
         description: 'COMMON_PATH (if no common tree, leave blank)'
         required: false
       MAKEFILE_NAME_BUILD_TYPE:
